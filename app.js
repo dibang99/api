@@ -59,7 +59,7 @@ app.use(bodyParser.json({ limit: '10mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://dibangsairoi:dibang99@cluster0.svlor.mongodb.net/test');
+mongoose.connect('mongodb+srv://dibangsairoi:dibang99@cluster0.svlor.mongodb.net/bookstore');
 
 
 var passport = require('passport');
