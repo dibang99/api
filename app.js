@@ -176,6 +176,7 @@ app.use(function(req, res, next) {
     next(createError(404));
 });
 
+
 // error handler
 app.use(function(err, req, res, next) {
     // set locals, only providing error in development
@@ -190,5 +191,8 @@ app.use(function(err, req, res, next) {
     });
 });
 
+app.listen(3000, () => {
+    console.log("server running on localhost:3000");
+})
 
 module.exports = app;
